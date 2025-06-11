@@ -8,7 +8,13 @@ import FileUploder from "./FileUploder";
 import { signOutUser } from "@/lib/appwrite/actions/user.actions";
 import { useRouter } from "next/navigation";
 
-const Header = () => {
+const Header = ({
+  userId,
+  accountId,
+}: {
+  userId: string;
+  accountId: string;
+}) => {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
@@ -31,7 +37,7 @@ const Header = () => {
       <div className="header-wrapper flex items-center min-w-fit gap-4">
         {/* File Uploader */}
         <div className=" rounded-full transition-all duration-300 hover:shadow-[0_0_10px_4px_#9a6efe80]">
-          <FileUploder />
+          <FileUploder ownerId={userId} accountId={accountId} />
         </div>
 
         {/* Logout Button */}

@@ -15,7 +15,7 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
       <Sidebar {...currentUser} />
       <section className="flex flex-col h-full flex-1">
         <MobileNav {...currentUser} />
-        <Header />
+        <Header userId={currentUser.$id} accountId={currentUser.accountId}/>
         <div className="remove-scrollbar h-full flex-1 overflow-auto px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10">
           {children}
         </div>

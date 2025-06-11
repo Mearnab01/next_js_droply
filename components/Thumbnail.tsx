@@ -22,14 +22,18 @@ export const Thumbnail = ({
   return (
     <figure className={cn("thumbnail", className)}>
       <Image
-        src={isImage ? url : getFileIcon(extension, type)}
+        src={
+          isImage && url
+            ? url
+            : getFileIcon(extension, type) || "/placeholder.png"
+        }
         alt="thumbnail"
-        width={100}
-        height={100}
+        width={30}
+        height={30}
         className={cn(
-          "size-10 object-contain rounded-full",
+          "size-6 object-contain rounded-full",
           imageClassName,
-          isImage
+          isImage && "thumbnail-image size-full object-cover object-center"
         )}
       />
     </figure>

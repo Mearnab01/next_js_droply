@@ -119,7 +119,7 @@ const MobileNav = ({
               ))}
             </ul>
             <div className="mt-5">
-              <FileUploder />
+              <FileUploder ownerId={ownerId} accountId={accountId}/>
             </div>
           </nav>
 
