@@ -95,6 +95,7 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
         toast.error("Something went wrong. Try again.");
       }
     } catch (err) {
+      console.log(err);
       toast.error("Error executing action.");
     } finally {
       setIsLoading(false);

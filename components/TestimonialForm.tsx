@@ -1,7 +1,7 @@
 "use client";
 
 import { SetStateAction, useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { createTestimonial } from "@/lib/appwrite/actions/testimonial.actions";

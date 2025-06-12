@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Models } from "node-appwrite";
 import React from "react";
 import Thumbnail from "./Thumbnail";
-import { convertFileSize, convertFileToUrl } from "@/lib/utils";
+import { convertFileSize } from "@/lib/utils";
 import ForamttedDateTime from "./ForamttedDateTime";
 import ActionDropdown from "./ActionDropdown";
 

@@ -48,7 +48,7 @@ const FileUploder = ({ ownerId, accountId, className }: FileUploaderProps) => {
     },
     [ownerId, accountId, path]
   );
-  const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop });
+  const { getRootProps, getInputProps } = useDropzone({ onDrop });
 
   const handleRemoveFile = (
     e: React.MouseEvent<HTMLImageElement>,

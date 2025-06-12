@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import { Button } from "./ui/button";
 import { Loader, LogOut } from "lucide-react";
 import Search from "./Search";
 import FileUploder from "./FileUploder";
