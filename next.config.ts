@@ -5,11 +5,12 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: "https", hostname: "png.pngtree.com" },
       { protocol: "https", hostname: "cloud.appwrite.io" },
+      { protocol: "https", hostname: "fra.cloud.appwrite.io" },
     ],
   },
   experimental: {
     serverActions: {
-      bodySizeLimit: "50mb", 
+      bodySizeLimit: "50mb",
     },
   },
 };

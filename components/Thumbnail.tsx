@@ -28,10 +28,10 @@ export const Thumbnail = ({
             : getFileIcon(extension, type) || "/placeholder.png"
         }
         alt="thumbnail"
-        width={30}
-        height={30}
+        width={100}
+        height={100}
         className={cn(
-          "size-6 object-contain rounded-full",
+          "size-10 object-contain rounded-full",
           imageClassName,
           isImage && "thumbnail-image size-full object-cover object-center"
         )}

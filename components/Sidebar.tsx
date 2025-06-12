@@ -15,7 +15,7 @@ interface Props {
 const Sidebar = ({ fullName, email, avatar }: Props) => {
   const pathname = usePathname();
   return (
-    <aside className="sidebar remove-scrollbar hidden h-screen w-[90px] flex-col overflow-auto px-5 py-7 sm:flex lg:w-[280px] xl:w-[325px]">
+    <aside className="sidebar bg-gradient-to-r from-black via-[#0e0e0e] to-transparent remove-scrollbar hidden h-screen w-[90px] flex-col overflow-auto px-5 py-7 sm:flex lg:w-[280px] xl:w-[325px] border-r border-[#1f1f1f] shadow-[6px_0_12px_rgba(0,0,0,0.3)]">
       <Link href="/" className="flex items-center gap-3 group relative">
         {/* logo hover effect */}
         <div
