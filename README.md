@@ -36,7 +36,7 @@ A full-stack file management dashboard powered by **Next.js**, **Appwrite**, and
 
 | Dashboard                              | Search                                 |
 |----------------------------------------|----------------------------------------|
-| ![dashboard](./public/assets/readme/dashboard.png) | ![search](./public/assets/readme/search.png) |
+| ![dashboard](./public/assets/icons/dashboard.svg) | ![search](./public/assets/icon/search.svg) |
 
 ---
 
