@@ -146,7 +146,7 @@ const ActionDropdown = ({ file }: { file: Models.Document }) => {
           )}
           {value === "delete" && (
             <p className="text-sm leading-6 text-white">
-              This action can't be undone.{" "}
+              This action can&apos;t be undone.{" "}
               <span className="font-semibold text-red-400">
                 {file.owner?.fullName}
               </span>
