@@ -5,6 +5,8 @@ import { getCurrentUser } from "@/lib/appwrite/actions/user.actions";
 import { redirect } from "next/navigation";
 import React from "react";
 
+export const dynamic = "force-dynamic";
+
 const Layout = async ({ children }: { children: React.ReactNode }) => {
   const currentUser = await getCurrentUser();
   if (!currentUser) {
@@ -15,7 +17,7 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
       <Sidebar {...currentUser} />
       <section className="flex flex-col h-full flex-1">
         <MobileNav {...currentUser} />
-        <Header userId={currentUser.$id} accountId={currentUser.accountId}/>
+        <Header userId={currentUser.$id} accountId={currentUser.accountId} />
         <div className="remove-scrollbar h-full flex-1 overflow-auto px-5 py-7 sm:mr-7 sm:rounded-[30px] md:mb-7 md:px-9 md:py-10">
           {children}
         </div>
